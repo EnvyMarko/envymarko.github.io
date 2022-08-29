@@ -32,12 +32,12 @@
                     <a class="nav-link   mx-3" id="hovText"  href="/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
                     </li>
                     <li class="nav-item mx-3">
-                    <a class="nav-link  mx-3  active"  style="color: #004aad ;"  href="#"><i class="fa-solid fa-bed"></i>Our Rooms</a>
+                    <a class="nav-link  mx-3  active"  style="color: #004aad;"  href="#"><i class="fa-solid fa-bed"></i>Our Rooms</a>
                     </li>
                     <li class="nav-item mx-3">
-                    <a class="nav-link  mx-3 " id="hovText" href="#" ><i class="fa-solid fa-person-swimming"></i>Experience</a>
+                    <a class="nav-link  mx-3 " id="hovText" href="/pages/experience.html" ><i class="fa-solid fa-person-swimming"></i>Experience</a>
                     <li class="nav-item mx-3">
-                    <a class="nav-link mx-3"   id="hovText"><i class="fa-solid fa-envelope"></i>Contact Us</a>
+                    <a class="nav-link mx-3"   id="hovText"  href="/pages/contactus.html"><i class="fa-solid fa-envelope"></i>Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -47,43 +47,303 @@
     </header>
 
 <!-- Room display  -->
-<div class="container-fluid d-flex gap-4 mt-4">
-    <div class="p-5 bg-dark w-25 ">
-        <div class="date-picker px-2 container-fluid text-center">
-            <label class="text-white fs-5">Check in:&nbsp&nbsp&nbsp</label> 
-            <i class="fa-solid fa-calendar-days icon" style="margin-left: 4px; padding-top: 35px;"></i>
-            <input type="text" class="mx-1 text-center" id="input-pop"  placeholder="Arrival Date"/>
+<div class="container-fluid d-flex gap-4 mt-4 flex-sm-column">
+    <div class="p-5  w-100  " style="background-color: #04091e;">
+            <div class="date-picker px-2  text-center d-block">
+            <label class="text-white fs-5 mx-1">Check in:&nbsp&nbsp&nbsp</label> 
+            <i class="fa-solid fa-calendar-days icon" style="margin-left: 5px; "></i>
+            <input type="text" class="mx-1 text-center" id="input-pop"  placeholder="Arrival Date"/> 
             
             <label class="text-white fs-5 ">Check out:&nbsp&nbsp</label>
-            <i class="fa-solid fa-calendar-days icon" style="padding-top: 35px;"></i>
+            <i class="fa-solid fa-calendar-days icon" ></i>
             <input type="text" id="input-pop2"  class=" text-center" placeholder="Departure Date"/> 
         </div>
-        div class="book-details d-flex gap-1 pb-4 justify-content-center" style="padding-left: 4rem;">
-        <div class="text-center">
-            <select class="px-1">
+        <br>
+        <div class="book-details d-flex gap-1 pb-4 justify-content-center " style="padding-left: 0rem;"><br>
+            <div class="text-center">
+                <select class="px-1">
                 <option data-display="Adult">Adult</option>
                 <option value="1">Old</option>
                 <option value="2">Younger</option>
                 <option value="3">Potato</option>
             </select>
-        </div> <br>
-        <div class="text-center">
-            <select class="px-3">
-            <option data-display="Child">Child</option>
-            <option value="1">Child</option>
-            <option value="2">Baby</option>
-            <option value="3">Child</option>
-            </select>
-        </div> <br>
-        <div class="text-center">
+            </div> <br>
+            <div class="text-center">
+                <select class="px-3">
+                <option data-display="Child">Child</option>
+                <option value="1">Child</option>
+                <option value="2">Baby</option>
+                <option value="3">Child</option>
+                </select>
+            </div> <br>
+            <div class="text-center">
             <select class="">
                 <option data-display="Child">Number of Rooms</option>
                 <option value="1">Room 01</option>
                 <option value="2">Room 02</option>
                 <option value="3">Room 03</option>
             </select>
+            </div>
+        </div>
+        <div class="pb-5 text-center fw-bold" style="padding-left: 3rem;">
+            <button type="button" class="btn text-white mt-2" style="background-color: orange; " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Book Now
+        </div>
+    </div> 
+
+
+
+            <div class="container-fluid bg-  d-flex  flex-column pt-5" style="height:90rem;">
+            <div class="bg-white p-5 mt-2 container d-flex">
+                <div>    
+                <img src="/img/tub (7).jpg" class="container shadow" style="height: auto;" alt="standard">
+                </div>
+                <div>
+                <h3 class="text-center" style="font-family: 'Merriweather'; color: #04091e; text-shadow: 2px 2px 4px white">Standard Room Twin</h3>
+                <p class="card-text text-center" style="padding-left: 10px;">Ideal for transient guests on a budget who wish to have a clean and comfortable stay. Each of our Standard Room is equipped with two single beds, LCD cable TV, air-conditioning, hot and cold shower, bathroom amenities, and free Wi Fi access.</p>
+                <p class="text-center"><b>Price PHP 3,500 per night</b></p>
+                <div class="text-center">
+                    <label class="">Select to reserved &nbsp</label><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..."><br>
+                    <button type="button" class="btn text-white mt-2" style="background-color: orange; " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reserved Now
+                    </button>
+                </div>
+                </div>
+            </div>
+            <br>
+                <div>
+                <div class="bg-white p-5 mt-2  d-flex container" >
+                    <div>    
+                    <img src="/img/tub (9).jpg" class="container shadow" style="height: auto; margin-right: 170px;" alt="standard">
+                    </div>
+                    <div>
+                    <h3 class="text-center" style="font-family: 'Merriweather'; color: #04091e; text-shadow: 2px 2px 4px white">Premier Suite</h3>
+                    <p class="card-text text-center" style="padding-left: 10px;">Ideal for couples and leisure or business travelers who wish to have a pleasant and comfortable stay. Each of our Superior Rooms comes equipped with a king-size bed and a day bed, LCD cable TV, air-conditioning, hot and cold shower, bathroom amenities , and free Wi Fi access.</p>
+                    <p class="text-center"><b>Price PHP 5,500 per night</b></p>
+                    <div class="text-center">
+                        <label class="">Select to reserved &nbsp</label><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                        <br>
+                        <button type="button" class="btn text-white mt-2" style="background-color: orange; " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reserved Now
+                        </button>
+                    
+                    
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <div>
+                <div class="bg-white p-5 mt-2  d-flex container" >
+                    <div>    
+                    <img src="/img/tub (8).jpg" class="container shadow" style="height: auto; margin-right: 170px;" alt="standard">
+                    </div>
+                    <div>
+                    <h3 class="text-center" style="font-family: 'Merriweather'; color: #04091e; text-shadow: 2px 2px 4px white">Family Suite</h3>
+                    <p class="card-text text-center" style="padding-left: 10px;">Designed for families looking for the perfect place to spend quality time together. Each of our spacious Family Suites comes with a king-size bed, a queen-size bed and a day bed, LCD cable TV, air-conditioning, hot and cold shower, bathroom amenities, and free Wi Fi access.</p>
+                    <p class="text-center"><b>Price PHP 8,500 per night</b></p>
+                    <div class="text-center">
+                        <label class="">Select to reserved &nbsp</label><input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..."><br>
+                        <button type="button" class="btn text-white mt-2" style="background-color: orange; " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Reserved Now
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Payment Process</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="col-md-7 col-lg-8 mx-5">
+                                <h4 class="mb-3">Billing address</h4>
+                                <form class="needs-validation" novalidate>
+                                  <div class="row g-3">
+                                    <div class="col-sm-6"> 
+                                      <label for="firstName" class="form-label ">First name</label>
+                                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                      <div class="invalid-feedback">
+                                        Valid first name is required.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-sm-6">
+                                      <label for="lastName" class="form-label">Last name</label>
+                                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                      <div class="invalid-feedback">
+                                        Valid last name is required.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                      <label for="username" class="form-label">Username</label>
+                                      <div class="input-group has-validation">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                      <div class="invalid-feedback">
+                                          Your username is required.
+                                        </div>
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                      <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                      <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                      <label for="address" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                      <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                      <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                                    </div>
+                        
+                                    <div class="col-md-5">
+                                      <label for="country" class="form-label">Country</label>
+                                      <select class="form-select" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option>United States</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        Please select a valid country.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-md-4">
+                                      <label for="state" class="form-label">State</label>
+                                      <select class="form-select" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>California</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-md-3">
+                                      <label for="zip" class="form-label">Zip</label>
+                                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Zip code required.
+                                      </div>
+                                    </div>
+                                  </div>
+                        
+                                  <hr class="my-4">
+                        
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                                  </div>
+                        
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="save-info">
+                                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+                                  </div>
+                        
+                                  <hr class="my-4">
+                        
+                                  <h4 class="mb-3">Payment</h4>
+                        
+                                  <div class="my-3">
+                                    <div class="form-check">
+                                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                      <label class="form-check-label" for="credit">Credit card</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                      <label class="form-check-label" for="debit">Debit card</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                      <label class="form-check-label" for="paypal">PayPal</label>
+                                    </div>
+                                  </div>
+                        
+                                  <div class="row gy-3">
+                                    <div class="col-md-6">
+                                      <label for="cc-name" class="form-label">Name on card</label>
+                                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                      <small class="text-muted">Full name as displayed on card</small>
+                                      <div class="invalid-feedback">
+                                        Name on card is required
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-md-6">
+                                      <label for="cc-number" class="form-label">Credit card number</label>
+                                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Credit card number is required
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-md-3">
+                                      <label for="cc-expiration" class="form-label">Expiration</label>
+                                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Expiration date required
+                                      </div>
+                                    </div>
+                        
+                                    <div class="col-md-3">
+                                      <label for="cc-cvv" class="form-label">CVV</label>
+                                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Security code required
+                                      </div>
+                                    </div>
+                                  </div>
+                        
+                                  <hr class="my-4">
+                        
+                                  <button class="w-100 btn text-white btn-lg" style="background-color: orange; " type="submit">Continue to checkout</button>
+                                </form>
+                              </div>
+                            </div>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+            </div><br>
+            <div class="bg-white p-5 mt-2 container" style="height: 100%; width: 100%;"> -->
+
+            </div> -->
+
         </div>
         </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
         <!-- boolking -->
 
 
@@ -135,7 +395,7 @@
 </footer>
 
 
-
+<script src="//code.tidio.co/9ayyptomadhp4qaaexzwpnhsn2l4jprj.js" async></script>
     </body>
     <script>
     window.addEventListener('scroll',(e)=>{
