@@ -1,0 +1,147 @@
+#bg-size{
+    background-size: cover;
+    width: 100%;
+    opacity: 80%;
+}
+
+body,p,h4{
+  font-family: "Open Sans", sans-serif;
+
+}
+.text-gradient {
+  /* Set the background color */
+  background: linear-gradient(to right, #004aad 0%, #38c4e7 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+#hovText:hover {
+      color:#004aad;
+
+}
+h1,.herotext{
+    color: orange;
+    
+}
+
+#booknow{
+margin-top: 5px;
+background-color: orange;
+color: white;
+padding: 8px;
+padding-left:  1rem;
+padding-right:  1rem;
+text-decoration: none;
+}
+#booknow:hover{
+  background-color:#04091e ;
+}
+
+#hov-bg{
+  background-color: orange; font-size: large;
+}
+#hov-bg:hover{
+  background-color: #04091e;
+}
+#masking {
+  position: absolute; /* Position the background text */
+  left: 0%;
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */
+}
+
+.add-shadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+#btn-pos{
+    position: fixed;
+    top: 21%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    overflow-wrap: normal;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: orange;
+
+}
+.footer-area {
+    background: #04091e;
+    opacity: 90%; 
+  }
+.pos-center{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Coiny', cursive;
+
+}
+header .carousel-inner .item {
+  height: 100vh;
+}
+
+#cap-animation{
+  padding-bottom:  300px;
+}
+
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.mask-bg {
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  color: orange;
+  padding-left: 600px;
+  padding-right: 100%;
+  padding-top: 200%;
+  padding-bottom: 300px;
+  opacity: 50%;
+  ;
+}
+.book-bgcolor{
+  background-color: #04091e;
+  padding-top: 20px;
+  margin: 50px;
+
+}
+.icon{
+position: absolute;
+
+}
+.icon {
+  padding: 8px;
+  color: orange;
+  width: 40px;
+  text-align: center;
+}
+#item-img {
+  width:100%;
+}
+/* #imgstyle{
+  margin-right: 50px;
+  width: 100%;
+  height: 800px;
+} */
+
+/* @media only screen and (max-width: 375px){
+  .formedia{
+  gap
+  }
+
+} */
