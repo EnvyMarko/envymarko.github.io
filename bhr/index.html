@@ -116,16 +116,17 @@
       <p class="text-light text-center">It’s easy to get settled in our smartly designed guest rooms, so you can do more, see more, or just relax more. Enjoy a seamless, consistent experience for your next business trip, vacation or special event with our warm hospitality and efficient service. </p>
     </div><br><br>
       <div class="date-picker px-2 container-fluid text-center">
-          <label class="text-white fs-5">Check in:&nbsp&nbsp&nbsp</label> 
-          <i class="fa-solid fa-calendar-days icon" style="margin-left: 4px;"></i>
-          <input type="text" class="mx-1 text-center" id="input-pop"  placeholder="Arrival Date"/>
-          
-          <label class="text-white fs-5 ">Check out:&nbsp&nbsp</label>
-          <i class="fa-solid fa-calendar-days icon"></i>
-          <input type="text" id="input-pop2"  class=" text-center" placeholder="Departure Date"/> 
+        <label class="text-white fs-5">Check in:&nbsp&nbsp&nbsp</label> 
+        <i class="fa-solid fa-calendar-days icon" style="margin-left: 4px;"></i>
+        <input type="text" class="mx-1 text-center" id="input-pop"  placeholder="Arrival Date"/>
+        
+        <label class="text-white fs-5 ">Check out:&nbsp&nbsp</label>
+        <i class="fa-solid fa-calendar-days icon"></i>
+        <input type="text" id="input-pop2"  class=" text-center" placeholder="Departure Date"/>
+        
       </div>
       <br>
-      <div class="book-details d-flex gap-1 pb-4 justify-content-center" style="padding-left: 4rem;">
+      <div class="book-details d-flex gap-1 pb-4 justify-content-center" >
         <div>
           <select class="px-1">
               <option data-display="Adult">Adult</option>
@@ -158,10 +159,10 @@
           <br><br><br><br><br>
           <!--------------------------------------------- start of image display -------------------------------------------------->
           <section>
-            <div class="d-flex w-100%">
-              <div class="container-fluid px-5 text-center pt-5">
-                <h1 style="font-family: 'Merriweather';"><strong>Wellness station</strong></h1>
-                <p class="text-muted">
+            <div class="row">
+                            <div class="col-md-6 gx-5 mb-4 text-center">
+                <h1 class="pt-5 text-sm-center" style="font-family: 'Merriweather';"><strong>Wellness station</strong></h1>
+                <p class="text-muted text-center pt-3">
                   Our Palace Wellness spa includes an indoor infinity swimming pool, extensive fitness facilities, and full massage and beauty services.
                 </p>
                 <h3 style="color: #004aad;"><strong>Bathing</strong></h3>
@@ -169,16 +170,17 @@
                   Immerse yourself in our geothermal waters... Whether you are looking to connect in our Bath House, find tranquility in our Spa Dreaming Centre, experience the serenity of private bathing, or unwind under moonlit bathing's sky, the choice is yours.
                 </p>
               </div>
-              <div class="container">
-                <div class="">
-                  <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5 boxShadow d-flex" data-bs-ripple-color="light">
-                    <img src="./img/pool view 2.jpg" class="img-fluid shadow p-3 mb-5 bg-body rounded flex-sm-column" id="imgstyle"/>
-                    <a href="#!">
-                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                      
-                    </a>
-                  </div>
+              <div class="col-md-6 gx-5 mb-4 text-center">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5 boxShadow" data-bs-ripple-color="light">
+                  <img src="./img/pool view 2.jpg" class="img-fluid shadow p-3 mb-5 bg-body rounded " />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    
+                  </a>
                 </div>
+              </div>
+  
+
             </div>
           </section>
           <section>
@@ -192,7 +194,7 @@
                   </a>
                 </div>
               </div>
-    
+  
               <div class="col-md-6 gx-5 mb-4 text-center">
                 <h1 class="pt-5 text-sm-center" style="font-family: 'Merriweather';"><strong>Alfresco Resto Bar</strong></h1>
                 <p class="text-muted text-center pt-3">
@@ -338,14 +340,10 @@
 <script>
   window.addEventListener("load", () => {
     picker.attach({ target: "input-pop" });
+    picker.attach({ target: "input-pop2" });
   });
-  </script>
-  <script>
-    window.addEventListener("load", () => {
-      picker.attach({ target: "input-pop2" });
-    });
-    </script>
-<script defer src="./js/datepicker.js"></script>
+</script>
+
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/custom.js"></script>
 <script src="https://kit.fontawesome.com/11146eef71.js" crossorigin="anonymous"></script>

@@ -134,3 +134,10 @@ position: absolute;
   width:100%;
 }
 
+/* Media query for iPhone 14 Pro Max */
+@media only screen and (max-width: 767px) {
+  /* Your styles for mobile devices here */
+  .car-img{
+    height: 20rem !important;
+  }
+}
